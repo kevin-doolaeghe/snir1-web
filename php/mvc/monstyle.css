@@ -1,0 +1,70 @@
+.cadre {
+	margin: -6px 0 10 -6px;
+	padding: 3px;
+	spacing: 0;
+	background: #4d7d95;
+	border-radius: 12px;
+	font-family:verdana,arial,sans-serif;
+	border:1px solid #4d7d95;
+	border-width:0px 1px 1px 0px;
+	color:#402050;
+	
+}
+.haut{
+	margin: -6px 0 10 -6px;
+	padding: 3px;
+	spacing: 0;
+	border-radius: 12px;
+	font-family:verdana,arial,sans-serif;
+	font-size:13px;
+	border:1px solid #4d7d95 ;
+	border-width:0px 1px 1px 0px;
+	background:-moz-linear-gradient( center top, #5c90b2   5%, #ffffff 100% );
+	color:#402050;
+}
+.titre {
+	margin: -6px 0 10 -6px;
+	color:white;
+	background:-moz-linear-gradient( center top, #4d7d95  5%, #dddddd 100% );
+	
+}
+.titreGauche{
+	margin: -6px 0 10 -6px;
+	background:-moz-linear-gradient( center top, #4d7d95  5%, #dddddd 100% );
+	color:white;
+	border-top-left-radius:12px;
+}
+.titreDroite{
+	margin: -6px 0 10 -6px;
+	background:-moz-linear-gradient( center top, #4d7d95  5%, #dddddd 100% );
+	color:white;
+	border-top-right-radius:12px;
+}
+
+td{
+	font-size:12px;
+	background: #f8f8f8;
+}
+.trGauche{
+	background:linear-gradient( center top, #4d7d95  5%, #dddddd 100% );
+}
+.gauche{
+	margin: -6px 0 10 -6px;
+	padding: 3px;
+	spacing: 1px;
+	border-radius: 12px;
+	font-family:verdana,arial,sans-serif;
+	font-size:13px;
+	border:1px solid #898ab7;
+	border-width:1px 1px 1px 1px;
+	background:-moz-linear-gradient( center top, #5c90b2 5%, #ffffff 100% );
+	color:#402050;
+	text-align:left;
+}
+
+a:hover{
+    background-color: #B2826A;
+	font-size: 125%;
+	} 
+.ui-autocomplete-loading {background: white url('ui-anim_basic_16x16.gif') right center no-repeat;}
+												

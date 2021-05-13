@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<title>Palindrome</title>
+
+</head>
+<body bgcolor="#f6f3f3">
+<img src="Palindrome_fichiers/logoLJR.png" name="logo" alt="logo lycée jean rostand roubaix" height="156" border="0" align="left">
+<img src="Palindrome_fichiers/blonde.gif" alt="un peu de gaieté" height="156" align="right">
+
+<div style="position:absolute;background-color:#666666;color:white;font-family:comic sans ms;width:350px;left:300px;top:50px">
+
+<form action="./traitementFormulaire.php" name="formulaire" method="post">
+<div>
+Palindrome à tester:<textarea id="texte" name="message" rows="10" cols="40" onfocus='if(this.value=="Elu par cette crapule") this.value="";'>Elu par cette crapule</textarea><br>
+  <input onclick="Valide()" name="monbouton" value="Envoi" style="position:relative;left:70px" type="button">
+</div>
+
+</form></div>
+<div style="position:absolute;background-color:#E0c0c0;color:navy;font-family:comic sans ms;width:350px;left:300px;top:300px">
+Exemples:<br>
+Esope reste ici et se repose<br>
+laval<br>
+gag<br>
+Engage le jeu, que je le gagne !<br>
+A l'étape, épate-la<br>
+Eh, ça va la vache ?
+<br><br>
+Certains palindromes nécessitent un traitement avant d'être testés
+<br><br><a href="http://www.php.net/manual/fr/book.strings.php" target="_blank">Aide php.net</a>
+
+<br><a href="../../../index.php">retour accueil </a>
+<br> <a href="http://btsirisinfo.free.fr/sitelycee/Iris/pdf/TpPalindrome.pdf" target="_blank">sujet</a>
+</div>
+<script type="text/javascript">
+function Valide()
+{
+var phrase = document.getElementById("texte");
+if (phrase.value!="") document.formulaire.submit();
+else alert("Veuillez remplir le texte, merci :)");
+}
+</script>
+
+ 
+
+</body></html>

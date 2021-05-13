@@ -1,0 +1,39 @@
+#
+# Structure de la table `jeu`
+#
+
+CREATE TABLE jeu (
+  Nom varchar(20) NOT NULL default '',
+  Age int(11) NOT NULL default '0',
+  Ville varchar(20) NOT NULL default '',
+  Score int(11) NOT NULL default '0',
+  id int(11) NOT NULL auto_increment,
+  passe varchar(50) NOT NULL default '',
+  PRIMARY KEY  (id)
+) ;
+
+#
+# Contenu de la table `jeu`
+#
+
+INSERT INTO jeu VALUES ('Nicolas', 19, 'Roubaix', 5, 1, '1714af0706');
+INSERT INTO jeu VALUES ('Monique', 18, 'Leers', 3, 2, '1dc74ccc78');
+INSERT INTO jeu VALUES ('gustave', 32, 'lille', 56, 24, '6566e52777');
+INSERT INTO jeu VALUES ('Benoit', 20, 'Wattrelos', 7, 4, '000b0a8b30');
+INSERT INTO jeu VALUES ('Celine', 21, 'Croix', 6, 5, '1f27f01661');
+INSERT INTO jeu VALUES ('Damien', 18, 'Marcq', 8, 6, '46cc55884a');
+INSERT INTO jeu VALUES ('Frank', 12, 'Lens', 9, 8, '7140fcf028');
+INSERT INTO jeu VALUES ('Gina', 12, 'Roubaix', 6, 9, '13325e7c06');
+INSERT INTO jeu VALUES ('Henri', 15, 'Lille', 8, 10, '6aa8afa448');
+INSERT INTO jeu VALUES ('Irene', 17, 'Lille', 5, 11, '6513f43906');
+INSERT INTO jeu VALUES ('Jean', 15, 'La Madeleine', 9, 12, '355a40243e');
+INSERT INTO jeu VALUES ('Guillaume', 18, 'Croix', 500, 25, '647a32324c');
+INSERT INTO jeu VALUES ('Lucas', 21, 'Lille', 6, 14, '4a4f34ce43');
+INSERT INTO jeu VALUES ('suzie', 21, 'tourcoing', 6, 19, '186d5f9e39');
+INSERT INTO jeu VALUES ('Olive', 44, 'Orlando', 10, 15, '2332793c1f');
+INSERT INTO jeu VALUES ('popeye', 78, 'paris', 10, 16, '4bbd185b7b');
+INSERT INTO jeu VALUES ('Quentin', 78, 'quimper', 3, 17, '21c9c6ba4c');
+INSERT INTO jeu VALUES ('Remi', 54, 'Roubaix', 5, 18, '2de6882f68');
+INSERT INTO jeu VALUES ('Moi', 45, 'malo', 1, 26, '50dc624377');
+
+    

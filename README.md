@@ -1,1 +1,1 @@
-# snir1-web
+# BTS SNIR | 1e année - Programmation Web

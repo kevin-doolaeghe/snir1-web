@@ -1,0 +1,35 @@
+/*---------------STYLE---------------*/
+
+body
+{
+    background: url("../pictures/background.jpg") fixed repeat;
+    font-family: "Segoe UI", "Comic Sans MS", sans-serif;
+    color: #181818;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+h1
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Segoe UI", "Comic Sans MS", sans-serif;
+}
+
+p
+{
+	display: flex;
+	text-align: justify;
+	font-family: "Segoe UI", "Comic Sans MS", sans-serif;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}

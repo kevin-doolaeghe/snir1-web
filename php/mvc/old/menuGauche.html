@@ -1,0 +1,87 @@
+<html>
+<HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=ISO-8859-1">
+<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.11.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
+<link rel="stylesheet" type="text/css" media="screen" href="monstyle.css" >
+<link rel="stylesheet" href="/libJquery/jquery-ui-1.11.2.custom//jquery-ui.css">
+<script src="/libJquery/jquery-1.11.2.js"></script>
+<script src="/libJquery/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+<script type="text/javascript" src="mesfonctions.js"></script>
+</HEAD>
+
+<body >
+
+<table  border=1 class='gauche'>
+<tr > <th >
+
+<form name=form1 action=./controller.php  method=post target=controller> ceux habitant &agrave; 
+<input type=text  name=ville id=ville size=10>
+<input type=hidden name=cas value=villePrecise>
+<input type=button name=bouton value=ville onclick=javascript:controle(form1,ville,ville);>
+</form></th></tr>
+
+<tr > <th >
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<form name=form5 action=./controller.php  method=post target=controller> ceux dont le nom est &agrave; 
+<input type=text  name=nom id=nom size=10>
+<input type=hidden name=cas value=nomPrecis>
+<input type=button name=bouton value=nom onclick=javascript:controle(form5,nom,nom);>
+</form></th></tr>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<tr><th > 
+<form name=form2 action=./controller.php  method=post target=controller> ceux dont le score est < &agrave; 
+<input type=text size=5 name=score>
+<input type=hidden name=cas value=scoreInferieur>
+<input type=button value=score onclick=javascript:controle(form2,score,score);>
+</form></th></tr>
+
+<tr>
+<th > 
+<form name= form3 action=./controller.php  method=post target=controller> ceux dont le score est < &agrave; 
+<input type=text size=5 name=score>
+<br>et dont l'&acirc;ge est < &agrave; <br>
+<input type =text size=5 name=age>
+<input type=hidden name=cas value=scoreAge>
+<input type=button value=scoreAge onclick=javascript:controle(form3,score,age);>
+</form></th></tr>
+
+<tr>
+<th>
+<input type=button value=Imprimer onclick="javascript:printSheet();" target=controller >
+<form>
+<input type=button value=CSV onclick=php:exportToCsv();>
+</form>
+</th></tr>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<tr id=boutonConnexion>
+<th>
+	<input type=button value='Connexion' onclick='affFormConnexion()' />
+</th>
+</tr>
+
+<tr id=formConnexion>
+<th>
+<input id="idConnex" placeholder="utilisateur" />
+<input id="passConnex" type="password" placeholder="mot de passe" />
+<input type="button" onclick="testConnexion();" value="Se connecter" />
+</th></tr>
+
+<tr class=connexionNecessaire><th >
+<form name= form4 action=./controller.php  method=post target=controller> id n&deg; 
+<input type=text size =5 name=ide><BR>
+<input type=hidden name=cas value=modifier>
+<input type=radio  name=choix value=modifier>modifier<BR> 
+<input type=radio name=choix value=supprimer>supprimer <BR>
+<input type=button name=bouton value=Choix? onclick=javascript:controle(form4,ide,ide);>
+</form></th></tr>
+
+<tr class=connexionNecessaire><th >
+<form action=./controller.php  method=post target=controller> 
+<input type=hidden name=cas value=insere>
+<input type=submit value=ins&eacute;rer></form></th></tr>
+</table></div>
+
+</body>
+

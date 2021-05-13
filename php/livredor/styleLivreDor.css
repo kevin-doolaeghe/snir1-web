@@ -1,0 +1,48 @@
+.noir{
+	font-family:verdana,arial,sans-serif;	
+	font-size:12px;
+	color:black;
+}
+.rouge{
+	font-family:verdana,arial,sans-serif;	
+	font-size:12px;
+	color:red;
+}
+.bleu{
+	font-family:verdana,arial,sans-serif;	
+	font-size:13px;
+	color:blue;
+}
+.cadre {
+	margin: -6px 0 10 -6px;
+	padding: 3px;
+	spacing: 0;
+	background: #a6ceed;
+	border-radius: 8px;
+	font-family:verdana,arial,sans-serif;
+	
+}
+.invite{
+	font-family:verdana,arial,sans-serif;	
+	font-size:16px;
+	color:black;
+	font-weight: bold;
+}
+.formulaire{
+	background-color:#667686;
+	color:white;
+	font-family:verdana,arial,sans-serif;	
+	border-radius: 8px;
+}
+.titreDroite{
+	margin: -6px 0 10 -6px;
+	background: #87b6da;
+	color:white;
+	border-top-right-radius:8px;
+}
+
+td{
+	font-size:12px;
+	background: #f8f8f8;
+}
+

@@ -1,0 +1,76 @@
+<html><head>
+<title>TP Alea</title>
+<script type="text/javascript">
+
+var alea,compteur;
+
+function rando()
+{
+
+alea=Math.floor(Math.random()*100+1);
+compteur=0;
+window.status=alea;
+//alert(alea);
+}
+
+
+function valide(n)
+{
+	compteur++;
+	if (n<1)
+	{
+		alert ("votre nombre : " +n +" est trop petit !");
+	}
+	else if (n>100)
+	{
+		alert ("votre nombre : " +n +" est trop grand !");
+	}
+	else
+	{
+		if (n<alea)
+	{
+		alert ("votre nombre : " +n +" est trop petit !");
+	}
+	else if (n>alea)
+	{
+		alert ("votre nombre : " +n +" est trop grand !");
+	}
+		if (n == alea)
+		{
+			alert ("votre nombre : "+n +"  alea:"+ alea+"\tBRAVO !<br/>Il vous a fallu "+compteur+" essais.");
+		}
+	}
+}
+</script>
+</head>
+<body onload="rando()">
+
+<center><form name="formulaire" action="#" method="post">
+<h1>Tapez votre nombre n( 1....100):</h1>
+<input type="text" name="n"><br>
+<input type="button" value="Ok" onclick="valide(n.value)"> 
+</form>
+
+<br>
+
+</center>
+
+<a href="../../index.php">retour accueil </a>
+
+
+</body></html>
+
+
+<!--
+	
+		Compte-rendu :
+	
+	2/
+	- C'est la balise <script></script>
+	- Entre les balises <head> et </head> mais c'est mieux dans le <body></body> à la fin pour laisser charger la page
+	- On appelle une fonction JavaScript en paramétrant une balise avec onclick="function()"
+	- Entre les balises <form></form>, on met des balises <input /> de type texte et un de type bouton pour envoyer le tout
+	
+	
+	
+-->
